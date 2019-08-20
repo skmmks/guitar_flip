@@ -3,20 +3,20 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = 0;
-var max_matches = 9;
+var max_matches = 2;
 var attempts = 0;
 var games_played = 0;
 var cardClickable = true;
 var images = [
     "./assets/images/brian-may.png",
     "./assets/images/black_tele.png",
-    "./assets/images/gibson_explorer.png",
-    "./assets/images/gibson_lp.png",
-    "./assets/images/gibson_v.png",
-    "./assets/images/white_strat.png",
-    "./assets/images/yellow_tele.png",
-    "./assets/images/martin_acoustic.png",
-    "./assets/images/schecter_black.png"
+    // "./assets/images/gibson_explorer.png",
+    // "./assets/images/gibson_lp.png",
+    // "./assets/images/gibson_v.png",
+    // "./assets/images/white_strat.png",
+    // "./assets/images/yellow_tele.png",
+    // "./assets/images/martin_acoustic.png",
+    // "./assets/images/schecter_black.png"
 ];
 var soundFiles = {
     'brett': new Audio ('./assets/audio/c_note.mp3')
@@ -130,7 +130,9 @@ function resetStats() {
     matches = 0;
     attempts = 0;
     displayStats();
-    $(".cardBack").removeClass('hidden');
+    $(".cardBack").fadeIn();
     $(".accuracy").text("0%");
     $(".winningModal").addClass("hidden");
+    $(".cardContainer").remove();
+    initializeApp();
 }
