@@ -3,13 +3,13 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = 0;
-var max_matches = 2;
+var max_matches = 1;
 var attempts = 0;
 var games_played = 0;
 var cardClickable = true;
 var images = [
     "./assets/images/brian-may.png",
-    "./assets/images/black_tele.png",
+    // "./assets/images/black_tele.png",
     // "./assets/images/gibson_explorer.png",
     // "./assets/images/gibson_lp.png",
     // "./assets/images/gibson_v.png",
