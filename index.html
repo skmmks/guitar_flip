@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Matching Game</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </head>
-    <body>
-        <header class="col border border-primary">Memory Match</header>
-        <aside class="col-2">
-            <div class="statsDiv">Games Played</div>
-            <div class="gamesPlayed statsDiv">0</div>
-<!--            <div class="statsDiv">Matches</div>-->
-<!--            <div class="totalMatches statsDiv">0</div>-->
-            <div class="statsDiv">Attempts</div>
-            <div class="attempts statsDiv">0</div>
-            <div class="statsDiv">Accuracy</div>
-            <div class="accuracy statsDiv">0%</div>
-        </aside>
-        <div class="container">
-            <div class="playArea">
-                <div class="winningModal hidden">
-                    <p>You Win</p>
-                    <button class="modalMessage">Play Again</button>
-                </div>
-            </div>
+<head>
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+<header class="col border border-primary">
+    Memory Match
+    <div class="statsDiv text-left">Games Played
+        <div class="gamesPlayed statsDiv">0</div>
+    </div>
+    <div class="statsDiv">Attempts
+        <div class="attempts statsDiv">0</div>
+    </div>
+    <div class="statsDiv text-right">Accuracy
+        <div class="accuracy statsDiv">0%</div>
+    </div>
+</header>
+<aside class="col-2">
+    <!--            <div class="statsDiv">Matches</div>-->
+    <!--            <div class="totalMatches statsDiv">0</div>-->
+</aside>
+<div class="container">
+    <div class="playArea">
+        <div class="winningModal hidden">
+            <p>You Win</p>
+            <button class="modalMessage">Play Again</button>
         </div>
-    </body>
+    </div>
+</div>
+</body>
 </html>
 
 
