@@ -100,11 +100,8 @@ function resetStats() {
     matches = 0;
     attempts = 0;
     displayStats();
-<<<<<<< HEAD
-    $(".cardBack").addClass('hidden');
-=======
-    $(".cardBack").fadeIn();
->>>>>>> dev
+    // $(".cardBack").addClass('hidden');
+    // $(".cardBack").fadeIn();
     $(".accuracy").text("0%");
     $(".winningModal").addClass("hidden");
     $(".cardContainer").remove();
