@@ -18,9 +18,9 @@ body {
 
 .winningModal {
     z-index: 1;
-    background-color: grey;
-    width: 50%;
-    height: 50%;
+    background-color: white;
+    width: 40%;
+    height: 55%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -115,7 +115,11 @@ header {
     color: black;
     font-size: 1.25rem;
 }
-
+.giphy {
+    height: 100%;
+    width: 100%;
+    border: black solid 4px
+}
 .hidden {
     display: none;
 }
