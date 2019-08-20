@@ -18,13 +18,9 @@ var images = [
     // "./assets/images/martin_acoustic.png",
     // "./assets/images/schecter_black.png"
 ];
-var soundFiles = {
-    'brett': new Audio ('./assets/audio/c_note.mp3')
-};
-
+var guitarRiff = new Audio('./assets/audio/guitar_riff.wav');
 var allImages = images.concat(images);
-var c_Note = new Audio("./assets/audio/c_note.mp3");
-var d_Note = new Audio('./assets/audio/d_note.mp3');
+
 function initializeApp() {
     randomizeCards(allImages);
     appendToDom();
@@ -35,16 +31,11 @@ function handleCardClick(event) {
     if ($(spamPrevention).hasClass('cardFront') || cardClickable === false) {
         return;
     }
-    // if (cardClickable === false) {
-    //     return
-    // }
-    // $(event.currentTarget).find('.cardBack').addClass('hidden');
     $(event.currentTarget).find('.cardBack').fadeOut(500);
 
     if (firstCardClicked === null) {
         firstCardClicked = event.currentTarget;
     } else {
-        // cardClickable = false;
         secondCardClicked = event.currentTarget;
         checkForMatch(firstCardClicked, secondCardClicked);
         firstCardClicked = null;
@@ -53,20 +44,11 @@ function handleCardClick(event) {
     }
 }
 function appendToDom() {
-    // var config_object = {
-    //     'noteName':
-    // }
     for(var i = 0; i < allImages.length; i++) {
         var newCardContainer = $('<div>').addClass('cardContainer');
         var newCard = $('<div>').addClass('card');
         var cardFront = $('<div>').addClass('cardFront').css('background-image', "url(" +allImages[i]+ ")");
         var cardBack = $('<div>').addClass('cardBack');
-        // var cardExample = $("<div>",config_object)
-
-        // )
-        // var cardImage = cardFront.
-        // cardFront.append(cardImage);
-        // newCard.append(cardFront);
         newCard.append(cardFront,cardBack);
         newCardContainer.append(newCard);
         $('.playArea').append(newCardContainer);
@@ -81,28 +63,16 @@ function checkForMatch(firstCardClicked, secondCardClicked) {
     if (firstImg === secondImg) {
         matches++;
         cardClickable = true;
-        // var original = firstImg.substring(55,60);
-        // var imageIndex = images[0].substring(16,21);
-        // switch (original) {
-        //     case images[0].substring(16,21):
-        //         c_Note.play();
-        //         break;
-        //     case images[1].substring(16,21):
-        //         d_Note.play();
-        //     default:
-        //         break;
-        // }
         if (matches === max_matches) {
             games_played++;
             $(".winningModal").removeClass('hidden');
             $('button').on('click', resetStats);
+            guitarRiff.play();
         }
     } else {
         setTimeout(function () {
             $(firstCardClicked).find(".cardBack").fadeIn(100);
             $(secondCardClicked).find(".cardBack").fadeIn(100);
-            // $(firstCardClicked).find(".cardBack").removeClass("hidden");
-            // $(secondCardClicked).find(".cardBack").removeClass("hidden");
             cardClickable = true;
         }, 1500);
     }
@@ -130,7 +100,13 @@ function resetStats() {
     matches = 0;
     attempts = 0;
     displayStats();
+<<<<<<< HEAD
     $(".cardBack").addClass('hidden');
+=======
+    $(".cardBack").fadeIn();
+>>>>>>> dev
     $(".accuracy").text("0%");
     $(".winningModal").addClass("hidden");
+    $(".cardContainer").remove();
+    initializeApp();
 }
