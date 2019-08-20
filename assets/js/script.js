@@ -38,7 +38,8 @@ function handleCardClick(event) {
     // if (cardClickable === false) {
     //     return
     // }
-    $(event.currentTarget).find('.cardBack').addClass('hidden');
+    // $(event.currentTarget).find('.cardBack').addClass('hidden');
+    $(event.currentTarget).find('.cardBack').fadeOut(500);
 
     if (firstCardClicked === null) {
         firstCardClicked = event.currentTarget;
@@ -98,8 +99,10 @@ function checkForMatch(firstCardClicked, secondCardClicked) {
         }
     } else {
         setTimeout(function () {
-            $(firstCardClicked).find(".cardBack").removeClass("hidden");
-            $(secondCardClicked).find(".cardBack").removeClass("hidden");
+            $(firstCardClicked).find(".cardBack").fadeIn(100);
+            $(secondCardClicked).find(".cardBack").fadeIn(100);
+            // $(firstCardClicked).find(".cardBack").removeClass("hidden");
+            // $(secondCardClicked).find(".cardBack").removeClass("hidden");
             cardClickable = true;
         }, 1500);
     }
