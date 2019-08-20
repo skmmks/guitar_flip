@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Matching Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
-</head>
-<body>
-<header class="col-12">
-    <div class="row">
-        <div class="col-3 statsDiv my-1">Games Played
-            <div class="gamesPlayed statsDiv">0</div>
+    <head>
+        <title>Matching Game</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body>
+    <div class="game">
+        <header class="col-12">
+            <div class="row">
+                <div class="col-3 statsDiv my-1">Games Played
+                    <div class="gamesPlayed statsDiv">0</div>
+                </div>
+                <div class="col-3 statsDiv my-1">Attempts
+                    <div class="attempts statsDiv">0</div>
+                </div>
+                <div class="col-3 statsDiv my-1">Accuracy
+                    <div class="accuracy statsDiv">0%</div>
+                </div>
+                <div class="col-3 statsDiv my-1">Reset</div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="playArea">
+
+            </div>
         </div>
-        <div class="col-3 statsDiv my-1">Attempts
-            <div class="attempts statsDiv">0</div>
-        </div>
-        <div class="col-3 statsDiv my-1">Accuracy
-            <div class="accuracy statsDiv">0%</div>
-        </div>
-        <div class="col-3 statsDiv my-1">Reset</div>
     </div>
-</header>
-<div class="container">
-    <div class="playArea">
-        <div class="winningModal hidden">
-            <p>You Win</p>
-            <button class="modalMessage">Play Again</button>
-        </div>
+    <div class="winningModal hidden">
+        <p>You Win</p>
+        <button class="modalMessage">Play Again</button>
     </div>
-</div>
-</body>
+    </body>
 </html>
 
 

@@ -3,7 +3,7 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = 0;
-var max_matches = 1;
+var max_matches = 9;
 var attempts = 0;
 var games_played = 0;
 var cardClickable = true;
