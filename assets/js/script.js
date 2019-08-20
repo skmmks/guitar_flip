@@ -3,14 +3,14 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = 0;
-var max_matches = 1;
+var max_matches = 3;
 var attempts = 0;
 var games_played = 0;
 var cardClickable = true;
 var images = [
     "./assets/images/brian-may.png",
-    // "./assets/images/black_tele.png",
-    // "./assets/images/gibson_explorer.png",
+    "./assets/images/black_tele.png",
+    "./assets/images/gibson_explorer.png",
     // "./assets/images/gibson_lp.png",
     // "./assets/images/gibson_v.png",
     // "./assets/images/white_strat.png",
@@ -18,9 +18,7 @@ var images = [
     // "./assets/images/martin_acoustic.png",
     // "./assets/images/schecter_black.png"
 ];
-var soundFiles = {
-    'brett': new Audio ('./assets/audio/c_note.mp3')
-};
+var guitarRiff = new Audio('./assets/audio/guitar_riff.wav')
 
 var allImages = images.concat(images);
 var c_Note = new Audio("./assets/audio/c_note.mp3");
@@ -96,6 +94,7 @@ function checkForMatch(firstCardClicked, secondCardClicked) {
             games_played++;
             $(".winningModal").removeClass('hidden');
             $('button').on('click', resetStats);
+            guitarRiff.play();
         }
     } else {
         setTimeout(function () {
