@@ -18,9 +18,9 @@ var images = [
     "./assets/images/martin_acoustic.png",
     "./assets/images/schecter_black.png"
 ];
-var guitarRiff = new Audio('./assets/audio/guitar_riff.wav')
-
+var guitarRiff = new Audio('./assets/audio/guitar_riff.wav');
 var allImages = images.concat(images);
+
 function initializeApp() {
     randomizeCards(allImages);
     appendToDom();
