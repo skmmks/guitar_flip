@@ -103,10 +103,9 @@ header {
 }
 
 .cardFront {
-    margin-top: 5%;
-    height: 90%;
+    height: 100%;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     /*background-position: center;*/
     position: absolute;
