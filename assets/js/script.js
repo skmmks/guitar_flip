@@ -9,14 +9,14 @@ var games_played = 0;
 var cardClickable = true;
 var images = [
     "./assets/images/brian-may.png",
-    // "./assets/images/black_tele.png",
-    // "./assets/images/gibson_explorer.png",
-    // "./assets/images/gibson_lp.png",
-    // "./assets/images/gibson_v.png",
-    // "./assets/images/white_strat.png",
-    // "./assets/images/yellow_tele.png",
-    // "./assets/images/martin_acoustic.png",
-    // "./assets/images/schecter_black.png"
+    "./assets/images/black_tele.png",
+    "./assets/images/gibson_explorer.png",
+    "./assets/images/gibson_lp.png",
+    "./assets/images/gibson_v.png",
+    "./assets/images/white_strat.png",
+    "./assets/images/yellow_tele.png",
+    "./assets/images/martin_acoustic.png",
+    "./assets/images/schecter_black.png"
 ];
 var soundFiles = {
     'brett': new Audio ('./assets/audio/c_note.mp3')
