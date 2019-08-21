@@ -51,6 +51,7 @@ header {
     background-repeat: repeat-y;
     background-size: cover;
     background-image: url("../images/music-background.jpg");
+    /*overflow: hidden;*/
 }
 .container-fluid {
     box-sizing: border-box;
@@ -131,9 +132,51 @@ header {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
-
-
+@media screen and (max-width: 1024px) {
+    .statsDiv {
+        width: 100%;
+    }
+    .container-fluid {
+        width: 100%;
+    }
+    .resetCircle:hover, .cardContainer:hover {
+        transform: scale(1)
+    }
+}
+@media screen and (min-width: 668px) and (max-width: 768px) {
+    .statsDiv{
+        width: 25%;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .statsDiv{
+        font-size: .9rem;
+        width: 24%;
+    }
+    .cardContainer {
+        width: 33.33%;
+        height: 25%;
+    }
+}
+@media screen and (max-height: 665px) {
+    .statsDiv{
+        display: inline-block;
+    }
+}
+@media screen and (max-height: 450px) {
+    .winningModal img {
+        height: 200px;
+    }
+}
+@media screen and (max-height: 375px) {
+    .statsDiv{
+        font-size: 1rem;
+    }
+    .winningModal img {
+        height: 150px;
+    }
+}
 
 
 
