@@ -3,7 +3,7 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = 0;
-var max_matches = 2;
+var max_matches = 9;
 var attempts = 0;
 var games_played = 0;
 var cardClickable = true;
@@ -31,7 +31,7 @@ function handleCardClick(event) {
     if ($(spamPrevention).hasClass('cardFront') || cardClickable === false) {
         return;
     }
-    $(event.currentTarget).find('.cardBack').fadeOut(500);
+    $(event.currentTarget).find('.cardBack').toggle('fast');
     $('.resetCircle').click(resetStats)
     if (firstCardClicked === null) {
         firstCardClicked = event.currentTarget;
