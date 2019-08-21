@@ -144,14 +144,14 @@ header {
     }
 }
 @media screen and (min-width: 668px) and (max-width: 768px) {
-    .statsDiv{
+    .statsDiv> div {
         width: 25%;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 @media screen and (max-width: 375px) {
-    .statsDiv{
-        font-size: .9rem;
+    header > * .statsDiv{
+        font-size: 1rem;
         width: 24%;
     }
     .cardContainer {
@@ -160,7 +160,7 @@ header {
     }
 }
 @media screen and (max-height: 665px) {
-    .statsDiv{
+    .statsDiv > * div {
         display: inline-block;
     }
 }
@@ -170,7 +170,7 @@ header {
     }
 }
 @media screen and (max-height: 375px) {
-    .statsDiv{
+    .statsDiv > *{
         font-size: 1rem;
     }
     .winningModal img {
