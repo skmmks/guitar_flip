@@ -135,6 +135,9 @@ header {
     .cardFront {
         margin-top: 10%;
     }
+    /*.game {*/
+    /*    background-size: contain;*/
+    /*}*/
 }
 @media screen and (max-height: 665px) {
     .statsDiv > * div {
@@ -149,6 +152,7 @@ header {
 @media screen and (max-height: 375px) {
     .statsDiv > *{
         font-size: 1rem;
+        display: inline;
     }
     .winningModal img {
         height: 75px;
