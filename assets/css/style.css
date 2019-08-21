@@ -27,7 +27,6 @@ body {
     text-align: center;
     transform: translate(-50%, -50%);
 }
-
 /*aside {*/
 /*    width: 20%;*/
 /*    height: 75vh;*/
@@ -153,6 +152,7 @@ header {
     header > * .statsDiv{
         font-size: 1rem;
         width: 24%;
+        display: inline-block;
     }
     .cardContainer {
         width: 33.33%;
