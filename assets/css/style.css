@@ -122,6 +122,15 @@ header {
         font-size: 1.4rem;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 768px) {
+    .cardContainer {
+        height: 25%;
+        width: 30%
+    }
+    .statsDiv div:only-child {
+        margin: auto;
+    }
+}
 @media screen and (max-width: 375px) {
     header > * .statsDiv{
         font-size: 1rem;
