@@ -19,12 +19,15 @@ header {
     text-align: center;
     font-size: 2em;
 }
+body {
+    background-image: url("../images/music-background.jpg");
+}
 .game {
     height: 100vh;
     background-attachment: fixed;
     background-repeat: repeat-y;
     background-size: cover;
-    background-image: url("../images/music-background.jpg");
+    /*background-image: url("../images/music-background.jpg");*/
 }
 .container-fluid {
     box-sizing: border-box;
