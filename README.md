@@ -3,7 +3,7 @@ A 'guitar collection' memory match game with 18 face down cards.  Players select
 
 # Getting Started
 1. Fork this repo and clone into a local directory   
-  `git clone https://github.com/(your_user_name)/guitar_flip.git`
+  `git clone https://github.com/skmmks/guitar_flip.git`
 2. Navigate to the `/guitar_flip` directory
 3. Open `index.html` to open on your default browser
 4. Good Luck!
