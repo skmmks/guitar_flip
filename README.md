@@ -1,4 +1,4 @@
-# Live Site - http://guitar.stevekmin.com
+# Live Site - <a href="http://guitar.stevekmin.com">Link</a>
 <img src="guitarFlip.gif">
 
 # Guitar Flip Memory Matching Game 
