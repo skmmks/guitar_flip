@@ -1,3 +1,5 @@
+# Live Site - http://guitar.stevekmin.com
+<img src=""
 # Guitar Flip Memory Matching Game 
 A 'guitar collection' memory match game with 18 face down cards.  Players select 2 cards, and if they are match, the cards remain face up.  If the cards do not match, they are automatically turned back over.  The game is over when all of the cards are matched.  
 
@@ -16,5 +18,4 @@ A 'guitar collection' memory match game with 18 face down cards.  Players select
 - HTML 5  
 - CSS 3  
 
-# Live Site 
-http://guitar.stevekmin.com
+
