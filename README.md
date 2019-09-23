@@ -7,3 +7,12 @@ A 'guitar collection' memory match game with 18 face down cards.  Players select
 2. Navigate to the `/guitar_flip` directory
 3. Open `index.html` to open on your default browser
 4. Good Luck!
+
+# Technologies Used
+Javascript 
+jQuery
+HTML 5
+CSS 3
+
+# Live Site 
+http://guitar.stevekmin.com
