@@ -9,10 +9,10 @@ A 'guitar collection' memory match game with 18 face down cards.  Players select
 4. Good Luck!
 
 # Technologies Used
-Javascript 
-jQuery
-HTML 5
-CSS 3
+Javascript   
+jQuery  
+HTML 5  
+CSS 3  
 
 # Live Site 
 http://guitar.stevekmin.com
