@@ -31,7 +31,7 @@ function handleCardClick(event) {
     if ($(spamPrevention).hasClass('cardFront') || cardClickable === false) {
         return;
     }
-    $(event.currentTarget).find('.cardBack').toggle('fast');
+    $(event.currentTarget).find('.cardBack').toggle(.000001);
     $('.resetCircle').click(resetStats)
     if (firstCardClicked === null) {
         firstCardClicked = event.currentTarget;
