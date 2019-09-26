@@ -123,7 +123,7 @@ and (orientation: portrait) {
         height: 16.67%;
     }
     .winningModal {
-        top: 30%;
+        width: 70%;
     }
 }
 
