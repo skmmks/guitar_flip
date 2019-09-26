@@ -28,7 +28,6 @@ function initializeApp() {
 }
 function handleCardClick(event) {
     var spamPrevention = event.target;
-    console.log(spamPrevention)
     if ($(spamPrevention).hasClass('cardFront') || cardClickable === false) {
         return;
     }
