@@ -13,33 +13,37 @@
         <script src="assets/js/script.js"></script>
     </head>
     <body>
-    <div class="game">
-        <div class="winningModal hidden">
-            <img class="giphy" src="./assets/images/giphy.gif" alt="Win!">
-            <button type="button" class="my-3 btn btn-success modalMessage">Play Again</button>
+        <div id="introModal" class="introModal">
+            <p>Guitar Flip Game</p>
+            <div class="btn btn-success">Play Game</div>
         </div>
-        <header class="col-12">
-            <div class="row">
-                <div class="col-3 statsDiv my-1">Games:
-                    <span class="gamesPlayed statsDiv">0</span>
-                </div>
-                <div class="col-3 statsDiv my-1">Attempts:
-                    <span class="attempts statsDiv">0</span>
-                </div>
-                <div class="col-3 statsDiv my-1">Accuracy:
-                    <span class="accuracy statsDiv">0%</span>
-                </div>
-                <div class="col-3 statsDiv my-1">Reset
-                    <span><i class="resetCircle fa fa-refresh" aria-hidden="true"></i></span>
-                </div>
+        <div class="game">
+            <div class="winningModal hidden">
+                <img class="giphy" src="./assets/images/giphy.gif" alt="Win!">
+                <button type="button" class="my-3 btn btn-success modalMessage">Play Again</button>
             </div>
-        </header>
-        <div class="container-fluid">
-            <div class="playArea">
+            <header class="col-12">
+                <div class="row">
+                    <div class="col-3 statsDiv my-1">Games:
+                        <span class="gamesPlayed statsDiv">0</span>
+                    </div>
+                    <div class="col-3 statsDiv my-1">Attempts:
+                        <span class="attempts statsDiv">0</span>
+                    </div>
+                    <div class="col-3 statsDiv my-1">Accuracy:
+                        <span class="accuracy statsDiv">0%</span>
+                    </div>
+                    <div class="col-3 statsDiv my-1">Reset
+                        <span><i class="resetCircle fa fa-refresh" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </header>
+            <div class="container-fluid">
+                <div class="playArea">
 
+                </div>
             </div>
         </div>
-    </div>
     </body>
 </html>
 

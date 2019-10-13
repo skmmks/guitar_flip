@@ -9,7 +9,16 @@
     text-align: center;
     transform: translate(-50%, -50%);
 }
-
+.introModal {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-size: 100px;
+    position: absolute;
+    border: solid black 6px;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+}
 header {
     box-sizing: border-box;
     height: 12%;
