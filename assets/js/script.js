@@ -25,6 +25,7 @@ function initializeApp() {
     randomizeCards(allImages);
     appendToDom();
     $('.card').click(handleCardClick);
+    $('#introModal').modal('show')
 }
 function handleCardClick(event) {
     var spamPrevention = event.target;
