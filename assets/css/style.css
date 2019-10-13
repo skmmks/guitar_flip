@@ -9,7 +9,15 @@
     text-align: center;
     transform: translate(-50%, -50%);
 }
-
+.introModal {
+    min-height: 100vh;
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+}
 header {
     box-sizing: border-box;
     height: 12%;
