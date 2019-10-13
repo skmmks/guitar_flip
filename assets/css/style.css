@@ -11,12 +11,12 @@
 }
 .introModal {
     min-height: 100vh;
+    min-width: 100vw;
     font-size: 100px;
     position: absolute;
     text-align: center;
-    left: 50%;
-    top: 50%;
     z-index: 1;
+    background-color: white;
 }
 header {
     box-sizing: border-box;
