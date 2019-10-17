@@ -12,7 +12,7 @@
 .introModal {
     min-height: 100vh;
     min-width: 100vw;
-    font-size: 100px;
+    font-size: 1em;
     position: absolute;
     border: solid black 6px;
     text-align: center;
